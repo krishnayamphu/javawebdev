@@ -1,7 +1,18 @@
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
 <body>
-<h2>Hello World!</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aspernatur culpa cupiditate debitis eaque error esse
-    explicabo hic, nam odit quaerat rem ullam veniam? Consequuntur earum expedita neque possimus quisquam!</p>
+
+<h1>Welcome to Java Web Development</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis delectus deleniti inventore laudantium,
+    nemo officiis quos vel! Ad adipisci animi architecto distinctio dolorem minima nostrum quia veritatis.
+    Exercitationem, facere.</p>
+
 </body>
 </html>
