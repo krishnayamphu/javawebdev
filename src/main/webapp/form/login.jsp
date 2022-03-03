@@ -1,10 +1,9 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: User
-  Date: 3/2/2022
-  Time: 2:47 PM
-  To change this template use File | Settings | File Templates.
---%>
+<%
+
+    if (session.getAttribute("user") != null) {
+        response.sendRedirect("welcome.jsp");
+    }
+%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -29,22 +28,25 @@
         .login-form p {
             color: red;
         }
-        form label{
+
+        form label {
             width: 80px;
             height: 30px;
             display: inline-block;
         }
-        input{
+
+        input {
             width: 200px;
             height: 30px;
             display: inline-block;
             margin-left: 15px;
         }
-        button{
+
+        button {
             background-color: #222222;
             color: white;
             text-align: center;
-            border:none;
+            border: none;
             border-radius: 2px;
             box-shadow: 0 0 2px #333;
             padding: 8px 15px;
@@ -56,9 +58,10 @@
     <p>
         <%
 
-            if (request.getParameter("err") != null) {
-                String err = request.getParameter("err");
+            if (session.getAttribute("err") != null) {
+                String err = (String) session.getAttribute("err");
                 out.print(err);
+                session.invalidate();
             }
         %>
     </p>

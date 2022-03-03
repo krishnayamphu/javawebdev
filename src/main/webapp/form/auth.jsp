@@ -3,12 +3,11 @@
     String password=request.getParameter("password");
 
     if(username.equals("admin") && password.equals("admin123")){
-//        out.print("Welcome Admin");
+        session.setAttribute("user",username);
         response.sendRedirect("welcome.jsp");
     }else{
-//        out.print("Invalid username or password");
-//        response.sendRedirect("login.jsp");
         String err="Invalid username or password";
-        response.sendRedirect("login.jsp?err="+err);
+        session.setAttribute("err",err);
+        response.sendRedirect("login.jsp");
     }
 %>
