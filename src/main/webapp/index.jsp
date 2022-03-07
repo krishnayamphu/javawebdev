@@ -10,6 +10,7 @@
 <body>
 
 <h1>Welcome to Java Web Development</h1>
+<p>User: <%= request.getAttribute("user") %></p>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur corporis delectus deleniti inventore laudantium,
     nemo officiis quos vel! Ad adipisci animi architecto distinctio dolorem minima nostrum quia veritatis.
     Exercitationem, facere.</p>

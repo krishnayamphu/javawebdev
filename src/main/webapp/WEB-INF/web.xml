@@ -4,4 +4,40 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+    <context-param>
+        <param-name>user</param-name>
+        <param-value>Admin</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>ServletConfigDemo</servlet-name>
+        <servlet-class>com.javaweb.ServletConfigDemo</servlet-class>
+        <init-param>
+            <param-name>cname</param-name>
+            <param-value>Aptech Computer Education Pvt. Ltd., Lalitpur</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ServletTest</servlet-name>
+        <servlet-class>com.javaweb.ServletTest</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletWelcome</servlet-name>
+        <servlet-class>com.javaweb.ServletWelcome</servlet-class>
+    </servlet>
+    
+    
+    
+    <servlet-mapping>
+        <servlet-name>ServletConfigDemo</servlet-name>
+        <url-pattern>/servlet-config</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletTest</servlet-name>
+        <url-pattern>/servlet-test</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletWelcome</servlet-name>
+        <url-pattern>/welcome</url-pattern>
+    </servlet-mapping>
 </web-app>
