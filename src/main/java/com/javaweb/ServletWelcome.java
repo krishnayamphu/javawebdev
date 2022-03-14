@@ -15,7 +15,7 @@ public class ServletWelcome extends HttpServlet {
         ServletContext application=getServletConfig().getServletContext();
         String user=application.getInitParameter("user");
         request.setAttribute("user",user);
-        request.getRequestDispatcher("welcome.jsp").forward(request,response);
+//        request.getRequestDispatcher("welcome.jsp").forward(request,response);
     }
 
     @Override

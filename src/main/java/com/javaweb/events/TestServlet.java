@@ -1,20 +1,20 @@
-package com.javaweb;
+package com.javaweb.events;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
+import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class ServletTest extends HttpServlet {
+@WebServlet(name = "TestServlet", value = "/test")
+public class TestServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        ServletContext context=getServletContext();
-        String user=context.getInitParameter("user");
-
-        request.setAttribute("user",user);
-//        request.getRequestDispatcher("index.jsp").forward(request,response);
+        ServletContext context = getServletContext();
+        String company = context.getAttribute("cname").toString();
+        PrintWriter pw = response.getWriter();
+        pw.println("Company Name: " + company);
     }
 
     @Override

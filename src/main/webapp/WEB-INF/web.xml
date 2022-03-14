@@ -8,6 +8,10 @@
         <param-name>user</param-name>
         <param-value>Admin</param-value>
     </context-param>
+<!--    <filter>-->
+<!--        <filter-name>FilterTest</filter-name>-->
+<!--        <filter-class>com.javaweb.filters.FilterTest</filter-class>-->
+<!--    </filter>-->
     <servlet>
         <servlet-name>ServletConfigDemo</servlet-name>
         <servlet-class>com.javaweb.ServletConfigDemo</servlet-class>
@@ -40,4 +44,13 @@
         <servlet-name>ServletWelcome</servlet-name>
         <url-pattern>/welcome</url-pattern>
     </servlet-mapping>
+
+<!--    <filter-mapping>-->
+<!--        <filter-name>FilterTest</filter-name>-->
+<!--        <url-pattern>/welcome</url-pattern>-->
+<!--    </filter-mapping>-->
+<!--    <filter-mapping>-->
+<!--        <filter-name>FilterTest</filter-name>-->
+<!--        <url-pattern>/servlet-test</url-pattern>-->
+<!--    </filter-mapping>-->
 </web-app>
